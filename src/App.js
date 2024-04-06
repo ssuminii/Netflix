@@ -4,6 +4,7 @@ import AppLayout from './layout/AppLayout';
 import Homepage from './pages/Homepage/Homepage';
 import MoviePage from './pages/Movies/MoviePage';
 import MovieDetailPage from './pages/MovieDetail/MovieDetailPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 
 // 홈페이지   /
