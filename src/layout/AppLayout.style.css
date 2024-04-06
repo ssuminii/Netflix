@@ -4,11 +4,16 @@
 }
 
 .navbar a {
-    color: white;
+    color: white !important;
 }
 
 .navbar a:hover,
 .navbar a:active,
 .navbar a:focus {
-    color: lightgray !important;
+    color: gray !important;
+}
+
+.navbar img {
+    display: block;
+    cursor: pointer;
 }
