@@ -1,6 +1,7 @@
 .navbar {
     background-color: black;
     color: white;
+    padding: 0 30px !important;
 }
 
 .navbar a {
