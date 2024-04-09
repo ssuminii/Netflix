@@ -5,7 +5,7 @@
     background-size: cover;
 }
 
-.banner:before {
+.banner::before {
     content: '';
     background:linear-gradient(to top, black, transparent);
     position: absolute;
@@ -21,4 +21,8 @@
     justify-content: center;
     height: 100%;
     padding: 20px;
+}
+
+.banner .text-white > * {
+    z-index: 2;
 }
