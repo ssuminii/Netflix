@@ -18,3 +18,9 @@
     display: block;
     cursor: pointer;
 }
+
+@media (max-width: 480px) {
+    .navbar img {
+        width: 80px;
+    }
+}

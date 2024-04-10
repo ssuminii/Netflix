@@ -3,7 +3,7 @@
     height: 440px;
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
     .carousel-container {
         height: 330px;
         display: flex;
