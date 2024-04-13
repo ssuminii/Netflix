@@ -3,12 +3,13 @@ import { Alert } from 'bootstrap';
 import { usePopularMoviesQuery } from '../../../../hooks/usePopularMovies';
 import MovieSlider from '../../../../common/MovieSlider/MovieSlider';
 import { responsive } from '../../../../common/constants/responsive';
+import LoadingSpinner from '../../../../common/\bLoadingSpinner/LoadingSpinner';
 
 const PopularMovieSlide = () => {
     const { data, isLoading, isError, error } = usePopularMoviesQuery();
 
     if(isLoading){
-        return <h1>Loading...</h1>
+        return <LoadingSpinner />
     }
     if(isError) {
         return <Alert variant="danger">{error.message}</Alert>

@@ -1,0 +1,49 @@
+.movie-detail {
+    padding: 50px;
+}
+
+.movie-detail-img {
+    width: 500px;
+    height: auto;
+}
+
+.movie-detail-title {
+    margin-bottom: 40px;
+}
+
+.movie-detail-title div:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.movie-detail-title div:last-child {
+    font-size: 20px;
+}
+
+.movie-detail-info {
+    font-size: 18px;
+    padding: 20px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.movie-detail-info div {
+    margin-bottom: 10px;
+}
+
+.movie-detail-info div:last-child {
+    margin-bottom: 0;
+}
+
+.movie-detail-genre {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.badge {
+    font-size: 16px;
+    margin-top: 18px;
+    margin-right: 10px;
+}

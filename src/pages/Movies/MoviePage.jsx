@@ -5,7 +5,7 @@ import { Alert, Container, Row, Col } from "react-bootstrap";
 import MovieCard from '../../common/MovieCard/MovieCard';
 import ReactPaginate from "react-paginate";
 import { useSearchMovieQuery } from '../../hooks/useSearchMovie';
-import ClipLoader from "react-spinners/ClipLoader";
+import LoadingSpinner from '../../common/\bLoadingSpinner/LoadingSpinner';
 
 // 경로 2가지
 // navbar에서 클릭해서 온 경우 -> Popular Movie 보여주기 (백엔드)
@@ -26,16 +26,7 @@ const MoviePage = () => {
     setPage(selected+1);
   };
   if (isLoading) {
-    return (
-      <div className="spinner-aria">
-        <ClipLoader
-          color={'red'}
-          size={150}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </div>
-    )
+    return <LoadingSpinner />;
   }
   if (isError) {
     return <Alert variant="danger">{error.message}</Alert>;
