@@ -4,6 +4,7 @@ import { Alert, Container, Row, Col, Badge } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import LoadingSpinner from '../../common/\bLoadingSpinner/LoadingSpinner';
 import './MovieDetailPage.style.css';
+import MovieReviews from './MovieReviews/MovieReviews';
 
 const MovieDetailPage = () => {
   const {id} = useParams();
@@ -45,6 +46,9 @@ const MovieDetailPage = () => {
                 ))}
             </div>
           </Col>
+        </Row>
+        <Row>
+          <MovieReviews />
         </Row>
       </Container>
     </div>
