@@ -40,6 +40,8 @@
 .movie-detail-genre {
     font-weight: 500;
     font-size: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
 }
 
 .badge {

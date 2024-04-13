@@ -9,9 +9,6 @@ import MovieReviews from './MovieReviews/MovieReviews';
 const MovieDetailPage = () => {
   const {id} = useParams();
   const { data, isLoading, isError, error } = useMovieDetailQuery({id});
-
-
-
   console.log('Movie Detail',data);
 
   if (isLoading) {

@@ -22,7 +22,7 @@
 }
 
 .overlay h1 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .overlay:hover {
@@ -35,12 +35,23 @@
 }
 
 .adult {
+    font-size: 12px;
+    display: inline-block;
     color: white;
-    background-color: rgb(114, 0, 0);
+    border: 2px solid rgb(114, 0, 0);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .genre {
     margin-right: 5px;
+    font-size: 10px !important;
+}
+
+.movie-info {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 @media (max-width: 480px) {

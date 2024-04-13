@@ -29,11 +29,11 @@ const MovieCard = ({movie}) => {
             <h1>{movie.title}</h1>
             <div className='movie-info'>
               <div>
-                  <div>{movie.vote_average}</div>
-                  <div>{movie.popularity}</div>
+                  <div>평점: {(movie.vote_average).toFixed(2)}점</div>
+                  <div>인기: {Math.floor(movie.popularity)}점</div>
                   <div className='adult'>{movie.adult ? '18' : 'under 18'}</div>
               </div>
-              <div>
+              <div className='movie-card-genre'>
                 {showGenre(movie.genre_ids).map((id) => (
                     <Badge bg='danger' className='genre'>{id}</Badge>
                 ))}

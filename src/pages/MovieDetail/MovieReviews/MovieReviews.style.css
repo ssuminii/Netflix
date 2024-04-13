@@ -1,0 +1,11 @@
+.review {
+    margin-bottom: 20px;
+    margin-right: 100px;
+    width: 600px;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
