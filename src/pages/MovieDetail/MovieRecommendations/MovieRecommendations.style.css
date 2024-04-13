@@ -1,0 +1,18 @@
+.movie-recommendation {
+    border-top: 1px white solid;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+
+.movie-recommendation h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recommendation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

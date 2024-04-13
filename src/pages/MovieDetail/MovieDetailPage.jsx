@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import LoadingSpinner from '../../common/\bLoadingSpinner/LoadingSpinner';
 import './MovieDetailPage.style.css';
 import MovieReviews from './MovieReviews/MovieReviews';
+import MovieRecommendations from './MovieRecommendations/MovieRecommendations';
 
 const MovieDetailPage = () => {
   const {id} = useParams();
@@ -46,6 +47,9 @@ const MovieDetailPage = () => {
         </Row>
         <Row>
           <MovieReviews />
+        </Row>
+        <Row>
+          <MovieRecommendations />
         </Row>
       </Container>
     </div>

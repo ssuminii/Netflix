@@ -1,5 +1,5 @@
 import React from 'react'
-import { Alert, Container, Row, Col, Badge } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { useMovieReviewQuery } from '../../../hooks/useMovieReview';
 import LoadingSpinner from '../../../common/\bLoadingSpinner/LoadingSpinner';

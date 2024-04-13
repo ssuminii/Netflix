@@ -1,5 +1,6 @@
 .movie-review {
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 .movie-review h1 {
     font-size: 30px;
@@ -28,4 +29,5 @@
     background-color: white;
     color: black;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
