@@ -22,7 +22,7 @@ const AppLayout = () => {
     const [keyword, setKeyword] = useState("");
     const searchByKeyword = (event) => {
         event.preventDefault();
-        // URL을 바꿔주기
+        // url로 넘겨주는게 좋음
         navigate(`/movies?q=${keyword}`);
         setKeyword('');
     }

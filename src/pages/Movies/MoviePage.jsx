@@ -5,9 +5,10 @@ import { Alert, Container, Row, Col } from "react-bootstrap";
 import MovieCard from '../../common/MovieCard/MovieCard';
 import ReactPaginate from "react-paginate";
 import { useSearchMovieQuery } from '../../hooks/useSearchMovie';
+import ClipLoader from "react-spinners/ClipLoader";
 
 // 경로 2가지
-// navbar에서 클릭해서 온 경우 -> Popular Movie 보여주기
+// navbar에서 클릭해서 온 경우 -> Popular Movie 보여주기 (백엔드)
 // keyword를 입력해서 온 경우 -> 키워드와 관련된 영화를 보여줌
 
 // 페이지네이션 설치
@@ -22,11 +23,19 @@ const MoviePage = () => {
   console.log('data', data);
 
   const handlePageClick = ({selected}) => {
-    // console.log('page', page);
     setPage(selected+1);
   };
   if (isLoading) {
-    return <h1>Loading...</h1>
+    return (
+      <div className="spinner-aria">
+        <ClipLoader
+          color={'red'}
+          size={150}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
+    )
   }
   if (isError) {
     return <Alert variant="danger">{error.message}</Alert>;
@@ -51,8 +60,7 @@ const MoviePage = () => {
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}
             marginPagesDisplayed={2}
-            // 전체 페이지
-            pageCount={data?.total_pages}
+            pageCount={data?.total_pages} // 전체 페이지
             previousLabel="< previous"
             pageClassName="page-item"
             pageLinkClassName="page-link"
@@ -66,7 +74,7 @@ const MoviePage = () => {
             containerClassName="pagination"
             activeClassName="active"
             renderOnZeroPageCount={null}
-            forcePage={page - 1}
+            forcePage={page - 1}  // 페이지 1부터 시작
           />
         </Col>
       </Row>
